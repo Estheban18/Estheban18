@@ -14,7 +14,7 @@
 
 ---
 
-## 🛠 Stack Tecnológico
+## 🛠 Stack Tecnológico | 👨‍💻 Programador Full Stack
 
 **Lenguajes y Bases de Datos**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -79,10 +79,12 @@
 ---
 
 <div align="center">
-  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="100px"/>
-  <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="100px"/>
-  <img src="https://media.giphy.com/media/3o6ZsVi3YF1VgSPvQs/giphy.gif" width="100px"/>
+  <!-- Messi -->
+  <img src="https://i.gifer.com/LXE7.gif" width="100px"/>
+  <!-- Cristiano Ronaldo -->
+  <img src="https://i.gifer.com/7w1R.gif" width="100px"/>
+  <!-- Mbappé -->
+  <img src="https://i.gifer.com/3ZMm.gif" width="100px"/>
   <br/>
-  <sub><em>Goku - Messi - Cristiano Ronaldo</em></sub>
+  <sub><em>Messi - Cristiano Ronaldo - Mbappé</em></sub>
 </div>
-
