@@ -77,10 +77,9 @@
 </div>
 
 ---
-
 <div align="center">
-  <!-- Messi -->
-  <img src="https://i.gifer.com/LXE7.gif" width="100px"/>
+  <!-- Messi (nuevo GIF funcional) -->
+  <img src="https://media.giphy.com/media/1kkxWqT5nvLXupUTwK/giphy.gif" width="100px"/>
   <!-- Cristiano Ronaldo -->
   <img src="https://i.gifer.com/7w1R.gif" width="100px"/>
   <!-- Mbappé -->
@@ -88,3 +87,4 @@
   <br/>
   <sub><em>Messi - Cristiano Ronaldo - Mbappé</em></sub>
 </div>
+
