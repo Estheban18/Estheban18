@@ -75,3 +75,14 @@
   <img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="100px">
   <p><em>"El único modo de hacer un gran trabajo es amar lo que haces" - Steve Jobs</em></p>
 </div>
+
+---
+
+<div align="center">
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="100px"/>
+  <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="100px"/>
+  <img src="https://media.giphy.com/media/3o6ZsVi3YF1VgSPvQs/giphy.gif" width="100px"/>
+  <br/>
+  <sub><em>Goku - Messi - Cristiano Ronaldo</em></sub>
+</div>
+
