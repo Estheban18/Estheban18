@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300px"/>
   
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJkY2J1bW5tY2R6dGJ3eW5xY3B5Z3V4Z2xqZzZ0bGZ6eHZqciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZVik7pBtuR3rO/giphy.gif" width="200px"/>
+  <img src="https://i.gifer.com/9sDg.gif" width="200px"/>
 
   # 👋 ¡Hola! Soy Estheban
   
