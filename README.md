@@ -3,237 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio profesional de Estheban, desarrollador Full Stack en formación">
-  <title>Estheban | Desarrollador en Formación</title>
   <style>
-    :root {
-      --primary-color: #2563eb;
-      --secondary-color: #1e40af;
-      --text-color: #333333;
-      --light-text: #6b7280;
-      --bg-color: #f9fafb;
-      --card-bg: #ffffff;
-      --border-radius: 8px;
-      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      font-family: 'Arial', sans-serif;
+      background-color: #0a0f14;
+      color: #e0e0e0;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       line-height: 1.6;
     }
-    
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 2rem;
+      background: #1a1f28;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
     }
-    
-    header {
+    .banner {
       text-align: center;
-      margin-bottom: 3rem;
+      padding: 20px 0;
     }
-    
-    .profile-picture {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 1.5rem;
-      border: 4px solid var(--primary-color);
-      box-shadow: var(--box-shadow);
+    .banner img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     }
-    
     h1 {
-      color: var(--primary-color);
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
+      color: #00ffff;
+      text-align: center;
+      margin: 10px 0;
+      font-size: 2.5em;
     }
-    
-    .title {
-      font-size: 1.25rem;
-      color: var(--light-text);
-      margin-bottom: 1.5rem;
-      font-weight: 400;
+    p {
+      text-align: center;
+      margin: 5px 0;
     }
-    
     .bio {
-      max-width: 700px;
-      margin: 0 auto 2rem;
-      text-align: center;
-      font-size: 1.1rem;
-      line-height: 1.8;
+      margin: 20px 0;
+      padding: 15px;
+      background: #222831;
+      border-radius: 5px;
     }
-    
-    .section {
-      background-color: var(--card-bg);
-      border-radius: var(--border-radius);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--box-shadow);
-    }
-    
-    .section-title {
-      color: var(--primary-color);
-      font-size: 1.5rem;
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-      font-weight: 600;
-    }
-    
     .tech-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+      margin: 20px 0;
     }
-    
-    .tech-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100px;
+    .tech-stack img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
     }
-    
-    .tech-icon {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 0.5rem;
+    .tech-stack img:hover {
+      transform: scale(1.1);
     }
-    
-    .tech-name {
-      font-size: 0.9rem;
-      color: var(--light-text);
-      text-align: center;
-    }
-    
     .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    
-    .social-link {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .social-link:hover {
-      color: var(--secondary-color);
-      text-decoration: underline;
-    }
-    
-    .social-icon {
-      width: 20px;
-      height: 20px;
-    }
-    
-    footer {
       text-align: center;
-      margin-top: 3rem;
-      color: var(--light-text);
-      font-size: 0.9rem;
+      margin: 20px 0;
     }
-    
-    @media (max-width: 768px) {
-      .container {
-        padding: 1.5rem;
-      }
-      
-      h1 {
-        font-size: 2rem;
-      }
-      
-      .title {
-        font-size: 1.1rem;
-      }
-      
-      .bio {
-        font-size: 1rem;
-      }
-      
-      .section {
-        padding: 1.5rem;
-      }
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #00ffff;
+    }
+    .social-links a:hover {
+      color: #ff00ff;
+    }
+    .snake-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .snake-section img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .snake-section img:hover {
+      transform: scale(1.1);
+    }
+    .snake-section p {
+      font-style: italic;
+      color: #ff00ff;
+      text-shadow: 0 0 5px #ff00ff;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8em; }
+      .banner img { max-width: 100%; }
+      .tech-stack { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+      .snake-section img { width: 120px; }
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="https://via.placeholder.com/150" alt="Foto de perfil de Estheban" class="profile-picture">
-      <h1>Estheban Pérez</h1>
-      <p class="title">Estudiante de Desarrollo de Software | Full Stack en formación</p>
-      <div class="bio">
-        <p>Actualmente cursando estudios en SENATI con especialización en desarrollo de software. Apasionado por crear soluciones tecnológicas innovadoras y eficientes. Mi objetivo es convertirme en un ingeniero de software altamente capacitado, combinando conocimientos técnicos con creatividad para resolver problemas complejos.</p>
-      </div>
-    </header>
-    
-    <div class="section">
-      <h2 class="section-title">Habilidades Técnicas</h2>
-      <div class="tech-stack">
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
-          <span class="tech-name">Python</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
-          <span class="tech-name">MySQL</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
-          <span class="tech-name">HTML5</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
-          <span class="tech-name">CSS3</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" class="tech-icon">
-          <span class="tech-name">Android</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon">
-          <span class="tech-name">Git</span>
-        </div>
-      </div>
+    <div class="banner">
+      <img src="your-photo-url-here" alt="Estheban's Photo Banner"/>
     </div>
-    
-    <div class="section">
-      <h2 class="section-title">Formación Académica</h2>
-      <div style="margin-bottom: 1.5rem;">
-        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">SENATI</h3>
-        <p style="margin-top: 0; color: var(--light-text);">Técnico en Desarrollo de Software (En curso)</p>
-        <p style="margin-top: 0.5rem;">Formación en desarrollo de aplicaciones web y móviles, bases de datos, y fundamentos de ingeniería de software.</p>
-      </div>
+    <h1>¡Hola! Soy Estheban, Desarrollador del Futuro 🚀</h1>
+    <p>Estudiante en SENATI | 💻 Programador Full Stack en formación | 🔮 Futuro Ingeniero de Software</p>
+    <div class="bio">
+      <p>Actualmente aprendiendo desarrollo web y móvil en SENATI, trabajando en proyectos personales y explorando tecnologías como Python, MySQL, y Android Studio. Apasionado por resolver problemas con código y amante de la tecnología futurista. ¡Conéctate conmigo!</p>
     </div>
-    
+    <h2>Tech Stack:</h2>
+    <div class="tech-stack">
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+      <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" alt="Android Studio"/>
+      <img src="https://img.shields.io/badge/XAMPP-FB7A24?style=for-the-badge&logo=xampp&logoColor=white" alt="XAMPP"/>
+    </div>
     <div class="social-links">
-      <a href="https://linkedin.com/in/tu-perfil" class="social-link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin social-icon"></i> LinkedIn
-      </a>
-      <a href="https://github.com/tu-usuario" class="social-link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github social-icon"></i> GitHub
-      </a>
-      <a href="mailto:tu-email@ejemplo.com" class="social-link">
-        <i class="fas fa-envelope social-icon"></i> Email
-      </a>
+      <a href="tu-enlace-facebook">Facebook</a> |
+      <a href="tu-enlace-instagram">Instagram</a> |
+      <a href="tu-enlace-linkedin">LinkedIn</a> |
+      <a href="tu-enlace-twitter">Twitter</a> |
+      <a href="mailto:tu-email@gmail.com">Email</a>
     </div>
-    
-    <footer>
-      <p>© 2023 Estheban Pérez. Todos los derechos reservados.</p>
-    </footer>
+    <div class="snake-section">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3Z0a3F5eWVod3A3YXFmczM4a3U2cXF5c2x4d2M5aTBzM3NheWV6ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0Iyl55kTeh71nTWw/giphy.gif" alt="Cyber Snake"/>
+      <p>🐍 Culebra Cibernética - Guardián del Código</p>
+    </div>
   </div>
 </body>
 </html>
