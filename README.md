@@ -52,22 +52,23 @@
 
 ---
 
+## 🐍 Juego de la Serpiente
+![Snake Game](https://github.com/Estheban18/Estheban18/blob/output/github-contribution-grid-snake.svg)
+
+---
+
 ## 📊 Estadísticas GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TuUsuario&show_icons=true&theme=radical" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TuUsuario&layout=compact&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Estheban18&show_icons=true&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Estheban18&layout=compact&theme=radical" />
 </div>
 
 ---
 
 ## 📱 Conéctate conmigo
 
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](tu-enlace-facebook)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](tu-enlace-instagram)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](tu-enlace-linkedin)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](tu-enlace-twitter)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu-email@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rojaszamoraestheban19@gmail.com)
 
 ---
 
@@ -75,3 +76,53 @@
   <img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="100px">
   <p><em>"El único modo de hacer un gran trabajo es amar lo que haces" - Steve Jobs</em></p>
 </div>
+
+
+
+
+
+name: Generate Snake Game
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Generate Snake
+        uses: Platane/snk@master
+        with:
+          github_user_name: Estheban18
+          svg_path: ./output/github-contribution-grid-snake.svg
+          
+      - name: Push to GitHub
+        run: |
+          git config --global user.name "Estheban18"
+          git config --global user.email "rojaszamoraestheban19@gmail.com"
+          git add -A
+          git commit -m "Update snake game"
+          git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
